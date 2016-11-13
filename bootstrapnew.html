@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/stylefornew.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+$(document).ready(function () {
+    // The actual plugin
+    $('.singlenav').singlePageNav({
+        offset: $('.singlenav').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: true,
+    });
+		$('.insert_0').parallax({
+        	imageSrc: 'img/bgimg1.jpg',
+        	speed: 0.5
+        });
+		$('.insert_1').parallax({
+        	imageSrc: 'img/bgimg2.jpg',
+        	speed: 0.4
+        });
+});
+		$(function () {
+		$(window).one( "scroll",function() {
+		if ($(window).scrollTop() > 600) {
+			 $(".typed").typed({
+			 strings: ["<h1>李斌</h1>^1200<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京工商大学2017年应届生,^300商务英语专业，^500勤勉好学，踏实肯干，勇于创新，^100熟于英语，了解日语，自我把握能力强，对集体活动与项目有着狂热的追求和向往，亦对您公司的实习工作充满向往。"],
+			 typeSpeed: 50
+			 });
+			};
+			});
+		});
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="nav-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="sr-only">这里是个折叠按钮</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+	        </button>
+	  <a class="navbar-brand" href="#">MyCV</a>
+	  </div>
+	  <div class="singlenav collapse navbar-collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#sec0">首页</a></li>
+				<li><a href="#sec1">个人简介</a></li>
+				<li><a href="#sec2">技能自估</a></li>
+				<li><a href="#sec3">作品</a></li>
+				<li><a href="#sec4">联系方式</a></li>
+			</ul>
+	  </div>
+  </nav>
+  <div id="sec0">
+	<div class="warper0">
+		<div class="container">
+			<div class="row">
+				<div class="col-xm-12 text-center">
+					<h1>That is me :)</h1>
+					<p>And this is my CV</p>
+					<a href="#sec1"><span class="glyphicon glyphicon-search"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="sec1">
+	<div class="container">
+		<div class="imgcontainer col-md-4 pull-right">
+			<img class="img-responsive" src="img/pro.png">
+		</div>
+		<div class="typecontain col-md-5">
+			<h3 class="typed"></h3>
+		</div>
+	</div>
+  </div>
+  <section id="insert0" class="insert_0">
+	<div class="container">
+	   <div class="insertline">
+		<div class="row text-center">
+			<h3><span>“</span>&nbsp;&nbsp;当我感到自己不足时，我习惯追赶&nbsp;&nbsp;<span>”</span></h3>
+		</div>
+	   </div>
+	</div>
+  </section>
+  <div id="sec2">
+		<h2>技能掌握状况</h2>
+	<div class="row">
+		<div class="skill container">
+			<div class="innerskill col-md-6">
+				<h4>HTML/HTML5</h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:75%"></div>
+				</div>
+				<h4>javascript<span class="label label-success">框架</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:55%"></div>
+				</div>
+				<h4>jquery<span class="label label-success">框架</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:55%"></div>
+				</div>
+				<h4>HtmlDOM</h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:75%"></div>
+				</div>
+				<h4>Photoshop<span class="label label-warning">图像</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:65%"></div>
+				</div>
+			</div>
+			<div class="innerskill col-md-6">
+				<h4>Angular.js<span class="label label-success pull-right">框架</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:15%"></div>
+				</div>
+				<h4>Node.js<span class="label label-success pull-right">框架</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:15%"></div>
+				</div>
+				<h4>backbone.js<span class="label label-success pull-right">框架</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:35%"></div>
+				</div>
+				<h4>Corel VideoStudio series<span class="label pull-right label-danger">视频</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:85%"></div>
+				</div>
+				<h4>AfterEffect<span class="label label-danger pull-right">视频</span></h4>
+				<div class="progress">
+					<div class="progress-bar" style="width:65%"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+  </div>
+  <div id="sec3">
+	<div class="container workcontain">
+	    <div class="btn-group" style="z-index: 999; position: absolute; left: 3%; top: 100px;" data-toggle="buttons">
+	 <label class="btn btn-warning btn-lg active">
+		<input class="choo1" type="radio" name="options" id="option1" autocomplete="off"> 网页作品
+	 </label>
+	<label class="btn btn-warning btn-lg">
+		<input class="choo2" type="radio" name="options" id="option2" autocomplete="off"> 视频作品
+	</label>
+		</div>
+		<div class="vediocontain">
+		<div class="col-md-5 vediocontain">
+			<iframe  style="width:480px;height:390px;" src="http://static.hdslb.com/miniloader.swf?aid=5501434&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>
+		</div>
+		<div class="col-md-5 col-md-offset-2 vediocontain">
+			<iframe  style="width:480px;height:390px;" src="http://static.hdslb.com/miniloader.swf?aid=5501434&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>
+		</div>
+		</div>
+		<div class="webcontain" style="display:none;">
+			<div class="col-md-5">
+				<img src="img/web1.png">
+			</div>
+			<div class="col-md-5">
+				<img src="img/web2.png">
+			</div>
+			<div class="col-md-2">
+				<img src="img/web3.png">
+			</div>
+		</div>
+	</div>
+  </div>
+  <div id="sec4" class="insert_1">
+	<div class="container text-center">
+		<div class="row text-center">
+			<div class="introtext col-sm-12">
+				<h3>感谢您能耐心看到这里！</h3>
+				<p>投出这份简历时是抱着诚惶诚恐的心态的，未来对每个人都是一种机会和可能性<br/>
+					当您看到简历时就说明至少我抓住了这次机会<br/>
+					您对我这份简历的每一次阅览对我来说就是这次努力的肯定<br/>
+					<span class="pull-right">-此致敬礼-</span>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 deinfo">
+			  <table class="info" width="350px">
+				<tr>
+				  <th>邮箱地址</th>
+				  <td>lbgod2222@163.com</td>
+				</tr>
+				<tr>
+				  <th>电话</th>
+				  <td>15032496477</td>
+				</tr>
+				<tr>
+				  <th>QQ/微信</th>
+				  <td>1097843969<td>
+				</tr>
+			  </table>
+			</div>
+			<div class="col-md-3 col-md-offset-2">
+				<a class="btn btn-success btn-lg" href="mailto:lbgod2222@163.com">EmailMe</a>
+			</div>
+		</div>
+	</div>
+  </div>
+ <script src="js/jquery.scrollUp.min.js"></script>
+ <script>
+
+	  // jQuery Scroll Up / Back To Top Image
+        $.scrollUp({
+                scrollName: 'scrollUp',      // Element ID
+		        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+		        scrollFrom: 'top',           // 'top' or 'bottom'
+		        scrollSpeed: 1000,            // Speed back to top (ms)
+		        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+		        animation: 'fade',           // Fade, slide, none
+		        animationSpeed: 300,         // Animation speed (ms)		        
+		        scrollText: '', // Text for element, can contain HTML		        
+		        scrollImg: true            // Set true to use image		        
+            });
+
+        // ScrollUp Placement
+        $( window ).on( 'scroll', function() {
+
+            // If the height of the document less the height of the document is the same as the
+            // distance the window has scrolled from the top...
+            if ( $( document ).height() - $( window ).height() === $( window ).scrollTop() ) {
+
+                // Adjust the scrollUp image so that it's a few pixels above the footer
+                $('#scrollUp').css( 'bottom', '80px' );
+
+            } else {      
+                // Otherwise, leave set it to its default value.
+                $('#scrollUp').css( 'bottom', '30px' );        
+            }
+        });
+		
+		// Switcher on/off
+		$(document).ready(function(){
+		$(".choo1").parent().click(function(){
+			$(".vediocontain:hidden").show();
+			$(".webcontain:visible").hide();
+		});
+		$(".choo2").parent().click(function(){
+			$(".vediocontain:visible").hide();
+			$(".webcontain:hidden").show();
+		});
+	 });
+ </script>
+ </body>
+</html>

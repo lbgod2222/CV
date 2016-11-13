@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+   <link rel="stylesheet" href="css/animate.min.css" />
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style> 
+	@font-face
+	{
+		font-family: MotionControl;
+		src: url('font/MotionControl.otf'),
+	}
+*{
+	margin:0;
+	padding:0;
+}
+h1
+{
+font-family:MotionControl;
+}
+img{
+	display:block;
+}
+#scene {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  width:100%;
+  height:700px;
+}
+body{
+  background-image:url(img/bgimg.jpg);
+  background-color:#441452;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:-1;
+  text-align:LEFT;
+  color:#d9d9d9;
+}
+#scene img{
+	position:absolute;
+	z-index:1;
+	background-attachment:fixed;
+}
+.player{
+	bottom:3%;
+	right:-5%;
+}
+.sailor{
+	top:10%;
+	left:20%;
+}
+.planet{
+	left:40%;
+	top:35%
+}
+.text{
+	float:left;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-top:30px;
+	margin-left:20ppx;
+	width:30%;
+}
+.text h1{
+	font-size:3.5em;
+	padding:20px;
+	line-height:45px;
+}
+.text p{
+	font-size:1.35em;
+	line-height:25px;
+	margin-left:15px;
+}
+.text span{
+	font-size:40px;
+}
+</style>
+ </head>
+ <body>
+  <div id="scene">
+  	<div class="text"><H1>IT'S A JOURNEY FOR ME</H1>
+	<p><span>“</span>李斌，男，2017届北京工商大学应届生，商务英语专业<span>”</span></p></div>
+	<img src="img/planet.png" class="layer planet" data-depth="1"></img>
+	<img src="img/player.png" class="layer player" data-depth="1.3"></img>
+ </div>
+ <script src="js/jquery.parallax.js"></script>
+ <script>
+  $('#scene').parallax({
+  calibrateX: false,
+  calibrateY: true,
+  invertX: true,
+  invertY: true,
+  limitX: false,/*X轴上的局限，数值越小范围越小，false不限*/
+  limitY: 7,
+  scalarX: 4,  /**x轴移动困难度**/
+  scalarY: 4,
+  frictionX: 0.8,
+  frictionY: 0.8
+});
+
+  $(document).ready(function(){
+    $('.text h1').addClass("animated fadeInDown"),
+
+    $('.text p').addClass("animated fadeInLeft")
+    );
+  });
+
+	</script>
+ </body>
+</html>
