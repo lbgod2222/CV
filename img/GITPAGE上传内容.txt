@@ -1,0 +1,10 @@
+1.选择路径： mkdir (文件夹名不加括号) cd 此文件夹
+2.克隆github文件： git clone http://github.com/lbgod2222/项目名字.git，此时只会克隆master分支。
+3.再次cd 形成的文件夹
+4.切换分支： git checkout -b gh-pages orgin/gh-pages
+	此间操作： git rm -rf . (移除本地文件删除)
+		   git add .    (将本地文件加入序列中，此时空文件)
+		   git commit -m "delete all files"(删除云端文件)		
+		   git add .    (添加云端不存在的本地文件)
+		   git push origin gh-pages (推送至云端)
+		   git status (已修改本地文件明细)

@@ -1,0 +1,253 @@
+body {
+	color: #ffffff;
+	line-height: 16px;
+}
+/*ÒýÈë×ÖÌå*/
+header{
+	position:relative;
+	margin-top:20px;
+	width:100%;
+	z-index:1000;
+}
+.menu_col{
+	width:1040px;
+	float:left;
+	min-height:1px;
+	margin-left:30px;
+}
+header h1{
+	position: relative;
+	display: block;
+	font-family:'TianZhen70b3fc353a';
+	left: 33%;
+	margin-top: 20px;
+	margin-bottom: 49px;
+	width: 100%;
+}
+header .navbar {
+	position: relative;
+	margin: 0;
+	margin-top: 0;
+	margin-left: 0;
+	text-align: center;
+}
+#wrapper .navbar-inner {
+	padding-right: 0px;
+	padding-left: 0px;
+	min-height: 0;
+	border: 0;
+	background-color: inherit;
+	background-image: none;
+	background-repeat: inherit;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	filter: inherit;
+}
+#sf-menu {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	margin-top: 10px;
+	margin-left: -7px;
+	min-height: 170px;
+}
+#sf-menu > li {
+	position: absolute;
+	display: inline-block;
+	margin-right: -2px;
+	margin-bottom: 1px;
+	width: 267px;
+	height: 268px;
+	background: url(../img/irbg.png);
+	top: -300px;
+	left: 470px;
+	width: 1px;
+	height: 1px;
+}
+#sf-menu > li > a {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	color: #bbb8b6;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	overflow: visible !important;
+}
+.base_text{
+	position: absolute;
+	font: bold 13px;
+	bottom: 7px;
+	left: 20px;
+	color: #fecc5d;
+	margin-bottom: 7px;
+}
+.base_text > p{
+	text-align:right;
+	position:absolute;
+	right:-160px;
+	top:0px;
+	font-style: normal;
+	color:#50372D;
+	float:right;
+	font-size:13px;
+}
+.base_text_hover{
+	color: #FFFFFF !important;
+}
+.hoverItem{
+	color: rgb(255,255,255) !important;
+}
+.menu_img{
+	opacity:0 !important;
+}
+.menu_img_over, .openPart{
+	opacity:1 !important;
+}
+.openPart {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: #ffcb4d;
+}
+#sf-menu > li > a img {
+	margin-top: 75px;
+	position: absolute;
+	left: 72px;
+}
+.content {
+	padding: 55px 30px 46px 30px;
+	background: url(../img/irbg.png);
+	width: 975px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+	min-height: 650px;
+}
+.content img{
+	height:125px;
+	width:125px;
+	margin-top:-100px;
+	background-color:#ffcb4d;
+	border-radius: 6px;
+}
+.content h1 , p{
+	float:right;
+}
+.content h1{
+	margin-top:-30px;
+	color:#E6E6FA;
+}
+.content p{
+	margin-right:-138px;
+	margin-top:10px;
+	color:#F4A460;
+}
+.content .inner_content{
+	margin-left:0px;
+	margin-top:30px;
+}
+.inner_content img{
+	width:200px;
+	height:247px;
+	margin:0px;
+	background-color:#fff;
+	border:4px solid #696969;
+}
+.content .inner_content p{
+	font-size:1.25em;
+	margin:0px;
+	text-indent:2em;
+	color:#E6E6FA;
+	line-height:35px;
+}
+.med{
+	min-height:150px;
+	display:inline-block;
+	margin-top:20px;
+	margin-right:40px;
+	border:1px solid black;
+	border-radius:6px;
+	background-color:rgba(192, 192, 192, 0.5);
+	position:relative;
+}
+.med div{
+	width:0;
+	height:0;
+	margin-left:5px;
+	position:absolute;
+	border-top:30px solid black;
+	border-left:30px solid transparent;
+	right:0;
+}
+.inner_content .med p{
+	line-height:30px;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+.inner_content .med:hover{
+	border:2px solid #fecc5d;
+}
+.inner_content .med:hover div{
+	border-top:30px solid #fecc5d;
+	border-left:30px solid transparent;
+}
+.skill{
+	margin-left:-18px !important;
+}
+.skill h4{
+	color:#E6E6FA;
+	margin-top:25px;
+	margin-bottom:5px;
+}
+.image-row{
+	margin-top:30px;
+	text-align:center;
+	padding:30px 80px 30px;
+}
+.image-row a{
+	display:inline-block;
+	margin-top:30px;
+	margin-left:45px;
+}
+.image-row a img{
+	width:250px;
+	height:130px;
+	margin:0;
+}
+.record{
+	display:inline-block;
+	width:80%;
+	float:left;
+	font-size:1.2em;
+	margin-left:2em;
+}
+.record span{
+	float:right;
+}
+.contact{
+	margin-top:30px;
+	font-size:1.5em;
+}
+.contact span{
+	display:block;
+	min-height:125px;
+	width:40%;
+	margin-left:50px;
+}
+.contact span img{
+	height:75px;
+	width:75px;
+	border-radius:18px;
+	margin:0 20px 0 0;
+}
