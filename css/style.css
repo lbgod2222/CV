@@ -171,6 +171,14 @@ header .navbar {
 	color:#E6E6FA;
 	line-height:35px;
 }
+.shouyeinfo{
+	margin:30px 30px 10px;
+	padding-top:20px;
+	border-top:1px solid #fff;
+	font-size:2em;
+	color:#F4A460;
+}
+
 .med{
 	min-height:150px;
 	display:inline-block;
@@ -242,7 +250,6 @@ header .navbar {
 .contact span{
 	display:block;
 	min-height:125px;
-	width:40%;
 	margin-left:50px;
 }
 .contact span b{
