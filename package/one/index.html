@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>大页</title>
+   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+   <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+$(function(){
+	$(".menu_1").click(function(){
+		$.scrollTo('#page_1',500);
+	});
+	$(".menu_2").click(function(){
+		$.scrollTo('#page_2',800);
+	});
+	$(".menu_3").click(function(){
+		$.scrollTo('#page_3',1000);
+	});
+});
+</script>
+ </head>
+ <body>
+  <div id="menu">
+	<ul>
+		<li><a href="#" class="menu_1">时尚码头</a></li>
+		<li><a href="#" class="menu_2">荣誉职员</a></li>
+		<li><a href="#" class="menu_3">诚惶诚恐</a></li>
+	</ul>
+  </div>
+  <div id="hidenbg"></div>
+  <div class="mainpage page01" id="page_1">
+	<div id="mask">
+		<p>黑色秋季</p>
+		<p>白色时尚</p>
+		<div class="quotation">月光浸水水浸天,一派空明互回荡——宋诗</div>
+	</div>
+  </div>
+  <div class="mainpage page02" id="page_2">
+	<h1>我们的JET-TEAM</h1>
+	<div id="personal">
+		<div id="per" class="p1">
+			<img src="images/p1.jpg">
+			<div id="bgpic">
+				<h6>Paul Frank</h6>
+			</div>
+		</div>
+		<div id="per" class="p2">
+			<img src="images/p2.jpg">
+			<div id="bgpic">
+				<h6>Alan Walker</h6>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div class="mainpage page03" id="page_3">
+	<h1>诚惶诚恐</h1>
+	<div id="cloud">
+		<p class="col1 raw1">What a amazing web！</p>
+		<p class="col2 raw2"> Amazing web！</p>
+		<p class="col3 raw3">What a amazing web！</p>
+		<p class="col3 raw1"> Amazing web！</p>
+		<p class="col2 raw1"> Web！</p>
+		<p class="col1 raw5"> Web！</p>
+		<p class="col2 raw6">What a amazing web！</p>
+	</div>
+  </div>
+ </body>
+</html>
+#003300

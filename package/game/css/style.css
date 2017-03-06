@@ -1,0 +1,148 @@
+*{
+	padding:0;
+	margin:0;
+}
+.container{
+	width:100%;
+	margin:0 auto;
+	background:url(../img/bg.jpg) no-repeat top center;
+	color:#fff;
+	height:2760px;
+	position:relative;
+	overflow:hidden;
+}
+.bgcontain{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../img/bg_tk.png) no-repeat top center;
+	height:2760px;
+	z-index:1;
+}
+.wrap{
+	width:1200px;
+	height:2760px;
+	margin:0 auto;
+	z-index:5;
+	position:relative;
+}
+.bgline{
+	background:url(../img/bg_line.png) no-repeat top center;
+	height:2760px;
+	z-index:1;
+}
+#section1{
+	width:100%;
+	height:920px;
+	position:absolute;
+	top:0;
+	z-index:5;
+}
+#section1 div, #section2 div, #section3 div{
+	position:absolute;
+	z-index:5;
+	opacity:1;
+}
+#section1 div img, #section2 div img, #section3 div img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.peo{
+	top:30px;
+	left:-365px;
+	transform:translate(-30px,-20px);
+	transition:all .5s linear 0s;
+	-moz-transition: all .5s linear 0s; /* Firefox 4 */
+	-webkit-transition:all .5s linear 0s; /* Safari ºÍ Chrome */
+	-o-transition:all .5s linear 0s; /* Opera */
+	opacity:0;
+}
+.logo{
+	top:15px;
+	left:45%;
+	width:0px;
+	height:0px;
+	transition:all .3s linear 0s;
+	-moz-transition: all .3s linear 0s; /* Firefox 4 */
+	-webkit-transition:all .3s linear 0s; /* Safari ºÍ Chrome */
+	-o-transition:all .3s linear 0s; /* Opera */
+}
+.enter{
+	right:20px;
+	top:30px;
+	width:0px;
+	height:0px;
+	transition:all .3s linear 0s;
+	-moz-transition: all .3s linear 0s; /* Firefox 4 */
+	-webkit-transition:all .3s linear 0s; /* Safari ºÍ Chrome */
+	-o-transition:all .3s linear 0s; /* Opera */
+}
+#section2 {
+	width:100%;
+	height:920px;
+	position:absolute;
+	top:920px;
+	z-index:5;
+}
+.b_1{
+	right:60px;
+	top:90px;
+}
+.b_2{
+	left:200px;
+	top:90px;
+}
+.b_3{
+	left:10px;
+	top:380px;
+}
+.b_4{
+	left:520px;
+	top:300px;
+}
+.b_5{
+	right:20px;
+	top:490px;
+}
+.suffcate{
+	width:0;
+	height:0;
+}
+#section3{
+	width:100%;
+	height:920px;
+	position:absolute;
+	z-index:5;
+	top:1840px;
+}
+.bbg_tk{
+	top:-170px;
+}
+.bbg_peo{
+	top:-20px;
+	left:10px;
+}
+.bbg_st{
+	top:290px;
+	left:110px;
+}
+.text{
+	width:380px;
+	position:absolute;
+	top:290px;
+	right:130px;
+}
+.animated #section1 .peo{
+	transform:translate(0,0);
+	opacity:1;
+}
+.animated #section1 .logo{
+	width:248px;
+	height:149px;
+}
+.animated #section1 .enter{
+	width:171px;
+	height:103px;
+}

@@ -178,7 +178,13 @@ header .navbar {
 	font-size:2em;
 	color:#F4A460;
 }
-
+.shouyeinfo p{
+	float:right;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
 .med{
 	min-height:150px;
 	display:inline-block;
@@ -227,6 +233,13 @@ header .navbar {
 	display:inline-block;
 	margin-top:30px;
 	margin-left:45px;
+}
+.image-row a:hover{
+	cursor:pointer;
+}
+.image-row .guidelink{
+	margin-left:5px;
+	margin-bottom:0px;
 }
 .image-row a img{
 	width:250px;
